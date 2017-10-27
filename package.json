@@ -17,7 +17,9 @@
   },
   "description": "Self guided workshops to teach you about hapi.",
   "scripts": {
-    "start": "node makemehapi.js"
+    "start": "node makemehapi.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "bl": "^0.8.0",
@@ -32,11 +34,13 @@
     "workshopper": "^1.0.0-alpha07",
     "workshopper-boilerplate": "0.0.1",
     "workshopper-exercise": "0.2.x",
-    "workshopper-wrappedexec": "0.1.x"
+    "workshopper-wrappedexec": "0.1.x",
+    "snyk": "^1.46.0"
   },
   "peerDependencies": {},
   "keywords": [
     "hapijs",
     "hapi"
-  ]
+  ],
+  "snyk": true
 }
